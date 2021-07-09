@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OpenHCI 2017 | Re:__ 重構</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="OpenHCI 2017是第八屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
+    本活動希望能夠以推廣HCI學門為主要宗旨，招收資訊工程與設計背景的學生，共同學習並進行跨領域的溝通與合作，且探索人類生活空間中與周遭環境、
+    物件或工具的新互動模式，進行為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，
+    進而尋思更和諧互惠的人機互動遠景。">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- SEO -->
+    <meta property="og:image" content="http://www.openhci.com/image/ogimg02.png">
+    <meta property="og:title" content="OpenHCI 2017 | Re:__ 重構">
+    <meta property="og:description" content="OpenHCI 2017是第八屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
+    本活動希望能夠以推廣HCI學門為主要宗旨，招收資訊工程與設計背景的學生，共同學習並進行跨領域的溝通與合作，且探索人類生活空間中與周遭環境、
+    物件或工具的新互動模式，進行為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧互惠的人機互動遠景。">
+
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="animation/magic.min.css" rel="stylesheet">
+    <link href="animation/animate.css" rel="stylesheet">
+    <link href="animation/hover-min.css" rel="stylesheet">
+
+    <!-- ScrollMagic.js -->
+
+    <script type="text/javascript" src="scrollMagicJS/TweenMax.min.js"></script>
+    <script type="text/javascript" src="scrollMagicJS/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="scrollMagicJS/animation.gsap.min.js"></script>
+    <script type="text/javascript" src="scrollMagicJS/debug.addIndicators.min.js"></script>
+
+    <!--wow.js-->
+    <script type="text/javascript" src="animation/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+
+    <!-- vivus.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js"></script>
+
+
+    <!-- favicon -->
+    <link rel="icon" href="image/icon.png" type="image/x-icon"/>
+  </head>
+  <body>
+    <audio src="http://storage.live.com/items/82E8E576D87B8421%211199?hy.mp3" autoplay="autoplay" loop="-1" id="background-audio"></audio>
+    <nav class="side-nav">
+        <ul>
+                  <li class="nav-home">
+                    <a href="#home" >
+                      <img src="image/openHCI_web-06.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-13.png" class="nav-pic red-pic">
+                      <span class="nav-label">Home</span></a>
+                  </li>
+
+                  <li class="nav-openhci2017">
+                    <a href="#openhci2017" >
+                      <img src="image/openHCI_web-07.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-14.png" class="nav-pic red-pic">
+                      <span class="nav-label">OpenHCI</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-intro_goals">
+                    <a href="#intro_goals" >
+                      <img src="image/openHCI_web-06.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-13.png" class="nav-pic red-pic">
+                      <span class="nav-label">Intro &amp Goals</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-program">
+                    <a href="#program" >
+                      <img src="image/openHCI_web-07.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-14.png" class="nav-pic red-pic">
+                      <span class="nav-label">Program</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-registration">
+                    <a href="#registration" >
+                      <img src="image/openHCI_web-06.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-13.png" class="nav-pic red-pic">
+                      <span class="nav-label">Registration</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-taichi">
+                    <a href="#taichi" >
+                      <img src="image/openHCI_web-07.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-14.png" class="nav-pic red-pic">
+                      <span class="nav-label">TAICHI</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-crew">
+                    <a href="#crew" >
+                      <img src="image/openHCI_web-06.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-13.png" class="nav-pic red-pic">
+                      <span class="nav-label">Crew</span>
+                    </a>
+                  </li>
+
+                  <li class="nav-contact">
+                    <a href="#contact" >
+                      <img src="image/openHCI_web-07.png" class="nav-pic blue-pic">
+                      <img src="image/openHCI_web-14.png" class="nav-pic red-pic">
+                      <span class="nav-label">Contact</span>
+                    </a>
+                  </li>
+
+                   <li id='mute'>
+                    <a href="#noscroll" >
+                      <img src="image/audioOn.png" class="nav-pic blue-pic">
+                      <img src="image/audioOn.png" class="nav-pic red-pic">
+                    
+                      <span class="nav-label-volume">Volume</span>
+                    </a>
+                  </li>
+        </ul>
+    </nav>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  <a class="navbar-brand" href="#">OpenHCI 2017</a>
+           </div>
+
+           <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#openhci2017">OpenHCI 2017</a></li>
+              <li><a href="#intro_goals">Intro &amp Goals</a></li>
+              <li><a href="#program">Program</a></li>
+              <li><a href="#registration">Registration</a></li>
+              <li><a href="#crew">Crew</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+           </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- section home begin-->
+
+    <section id="home">
+        
+        <!--<img src="image/homeImage01.svg" class="home-background">-->
+        <object id="home-bg" class="home-background" type="image/svg+xml" data="image/homeImage01.svg"></object>
+
+        <img src="image/homeImageMobile.svg" class="home-background-mobile ">
+        <div class ="title">
+          <img src="image/homeTitle.png" class="home-title">
+        </div>
+    </section>
+
+    <!-- section home over-->
+
+    <!-- section openhci2017 begin-->
+
+    <section id="openhci2017">
+      <div class="content-container">
+        <div class="title">
+          <img src="image/openHCI2017Image.svg" class ="openhci2017-background">
+          <img src="image/openHCI2017Image-mobile.png" class ="openhci2017-background-mobile wow rotateInDownLeft">
+        </div>
+        <div class="half-container">
+          <div class="content">
+            <p>
+              本屆活動主題為「Re:__ 」，作為開頭，意味著再一次的思考、改造與重生，之於物件、之於人們對於Re 的想像，以一種所謂自我的重構，顛覆習以為常的認知，更深入探索物與人之間的相互關係。
+            </p>
+          </div>
+        </div>
+        <div class="half-container-eng">
+          <p>
+            “Re-” stands for a process of rethinking, reconstruction and revolution. We invite you to set free your imagination and subvert your mind through multi-disciplinary collaboration. Together, we aim to discover a deeper level of interaction within human, objects, and everything in between.
+          </p>
+        </div>
+        </div>
+    </section>
+
+    <!-- section openhci2017 over-->
+
+
+    <!-- section intro begin-->
+
+    <section id="intro_goals">
+      <div class="frame">
+        <div class="title">
+          <img src="image/introTitle.svg" class="intro-image">
+          <img src="image/introTitleMobile.png" class="intro-image-mobile wow rotateInDownLeft">
+        </div>
+
+        <div class="content-container">
+          <div class="content">
+            <h3>What is HCI</h3>
+            <p>
+              Human-Computer Interaction （HCI）為近年來相當活躍的跨領域學門。相較於其他專門領域，HCI學門獨特的複合特性，使得其創造過程需要高度的跨領域合作。研究的著眼點不但訴求技術、更試圖從以人為本的角度去探討，以創造更佳的使用者經驗。
+            </p>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="content">
+            <h3>History of OpenHCI</h3>
+            <p>
+              OpenHCI 2017是第八屆由學生自治籌備的人機互動工作坊，旨在推廣人機互動學門與跨領域合作。 在六天的營期間，來自不同領域的學員會經歷一系列講座與課後實作演練，深入完整 HCI 設計流程，透過合作溝通以實踐構想，將無盡的創意展現給世界！
+            </p>
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="content">
+            <h3>Goals</h3>
+            <p>
+              本活動希望能夠以推廣HCI為主要宗旨，招收工程與設計背景的學生、共同學習並進行跨領域的合作，探索人類生活空間中與周遭環境、物件或工具的互動模式。為期六天的工作坊，期盼參與者能以此概念體察其日常經驗裡的互動缺口或議題，實際動手解決問題或創造出新的意義的能力，進而尋思更和諧的人機互動遠景。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-background">
+        <img src="image/introImage.svg">
+      </div>
+    </section>
+
+    <!-- section intro over -->
+
+    <!-- section program begin -->
+    <section id="program">
+
+      <div class="frame">
+
+        <div class="left-side-bar">
+          <!-- Dont Delete Me -->
+        </div>
+
+        <div class="middle-container">
+
+
+          <div class="day-block1">
+
+            <div class="day1 active">
+              <img src="image/27.svg" class="date" width="20%" height="20%"/>
+              <img src="image/programTitle.png" class="titleImage wow rotateInDownRight">
+              <h3 class="title"><span>Day 01 &nbsp;</span>前置工作坊</h3>
+              <img src="image/openHCI_web-10.svg" class="icon" width="7%" height="7%"/>
+              <p>0830 - 0920  學員報到</p>
+              <p>0920 - 0930  開場</p>
+              <p>0930 - 1000  破冰遊戲</p>
+              <p>1000 - 1010  中場休息</p>
+              <p>1010 - 1200  互動設計之應用教學(Arduino)</p>
+              <p>1200 - 1330  午餐時間</p>
+              <p>1330 - 1430  演講 I Tuck Wah Leong</p>
+              <p>1430 - 1440  中場休息</p>
+              <p>1440 - 1630  模型設計與實作(Lo-fi prototyping)</p>
+              <p>1630 - 1640  中場休息</p>
+              <p>1640 - 1740  團體創意實作</p>
+              <p>1740 - 1830  實作發表</p>
+            </div>
+
+            <div class="day4 ">
+              <img src="image/30.svg" class="date" width="20%" height="20%"/>
+              <h3 class="title"><span>Day 04 &nbsp;</span>實作與媒材 II</h3>
+              <img src="image/openHCI_web-10.svg" class="icon" width="7%" height="7%"/>
+              <p>0830 - 0900  學員報到</p>
+              <p>0900 - 0930  故事前情提要</p>
+              <p>0930 - 1030  演講 VI 葉彥伯</p>
+              <p>1030 - 1050  中場休息</p>
+              <p>1050 - 1150  準備中評 </p>
+              <p>1150 - 1300  午餐時間</p>
+              <p>1300 - 1400  各組準備中間提案</p>
+              <p>1400 - 1610  中間提案</p>
+              <p>1620 - 1750  評審總評</p>
+              <p>1750 - 1830  綜合討論</p>
+            </div>
+
+          </div>
+
+          <div class="day-block2">
+            <div class="day2 active">
+              <img src="image/28.svg" class="date" width="20%" height="20%"/>
+              <h3 class="title"><span>Day 02 &nbsp;</span>行為與觀察</h3>
+              <img src="image/openHCI_web-10.svg" class="icon" width="7%" height="7%"/>
+              <p>0830 - 0900  學員報到</p>
+              <p>0900 - 0905  開場</p>
+              <p>0905 - 0930  開幕致詞 梁容輝</p>
+              <p>0930 - 1030  演講 II 張永儒</p>
+              <p>1030 - 1050  中場休息</p>
+              <p>1050 - 1150  演講 III 蔡志浩</p>
+              <p>1150 - 1330  午餐時間</p>
+              <p>1330 - 1400  主題介紹</p>
+              <p>1420 - 1620  場域觀察</p>
+              <p>1620 - 1700  團體討論</p>
+              <p>1700 - 1800  初步結果分享</p>
+            </div>
+
+            <div class="day5 ">
+              <img src="image/0701.svg" class="date" width="20%" height="20%"/>
+              <h3 class="title"><span>Day 05 &nbsp;</span>實作與媒材 III</h3>
+              <img src="image/openHCI_web-10.svg" class="icon" width="7%" height="7%"/>
+              <p>0830 - 0900  學員報到</p>
+              <p>0900 - 0930  故事前情提要</p>
+              <p>0930 - 1030  演講 VII 林書漾</p>
+              <p>1030 - 1050  中場休息</p>
+              <p>1050 - 1150  演講 VIII 宋恆</p>
+              <p>1150 - 1300  午餐時間</p>
+              <p>1300 - 1700  設計實作</p>
+              <p>1700 - 1800  開放使用數位製造器材</p>
+            </div>
+          </div>
+
+          <div class="day-block3">
+            <div class="day3 active">
+              <img src="image/29.svg" class="date" width="20%" height="20%"/>
+              <h3 class="title"><span>Day 03 &nbsp;</span>實作與媒材 I</h3>
+              <img src="image/openHCI_web-10.svg" class="icon" width="7%" height="7%"/>
+              <p>0830 - 0900  學員報到</p>
+              <p>0900 - 0930  前情提要與分享</p>
+              <p>0930 - 1030  演講 IV 蔡文傑</p>
+              <p>1030 - 1050  中場休息</p>
+              <p>1050 - 1150  演講 V 詹力韋</p>
+              <p>1150 - 1300  午餐時間</p>
+              <p>1300 - 1400  數位製造</p>
+              <p>1400 - 1630  點子發想</p>
+              <p>1630 - 1800  主題討論與實作</p>
+            </div>
+
+            <div class="day6 ">
+              <img src="image/0702.svg" class="date" width="20%" height="20%"/>
+              <h3 class="title"><span>Day 06 &nbsp;</span>發表與展覽</h3>
+              <img src="image/openHCI_web-10.svg" class="icon" width="7%" height="7%"/>
+              <p>0830 - 0900  學員報到</p>
+              <p>0900 - 1030  各組實作時間</p>
+              <p>1030 - 1040  各組展場報到</p>
+              <p>1040 - 1200  佈置互動會場</p>
+              <p>1200 - 1300  午餐時間</p>
+              <p>1300 - 1310  互動會場開場</p>
+              <p>1310 - 1530  各組成果發表</p>
+              <p>1530 - 1730  互動成果展示</p>
+              <p>1730 - 1830  頒獎＆閉幕式</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-side-bar">
+
+          <div class="next-btn">
+            <img class="pic" src="image/nextBtn.svg">
+            <div class="text">
+              <span>Next</span>
+            </div>
+          </div>
+
+          <div class="back-btn">
+            <img class="pic" src="image/backBtn.svg">
+            <div class="text">
+              <span>Back</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section program over -->
+
+    <!-- section registration begin -->
+    <section id="registration">
+      <img src="image/registrationTitle.png" class="title wow rotateInDownRight">
+      <div class="left-side-container"></div>
+
+      <div class="right-side-container">
+
+        <div class="right-top">
+        </div>
+
+        <div class="right-btm">
+          <div class="cart-container">
+
+            <div class="cart cart1" data-index="1">
+              <div class="img-text">
+                <img src="image/regInfo.svg"/>
+                <div class="text">
+                  活動與報名資訊<br><br>STEP 01
+                </div>
+              </div>
+              <div class="hover-sign"></div>
+            </div>
+
+            <div class="cart cart2" data-index="2">
+              <div class="img-text">
+                <img src="image/regQuery.svg" />
+                <div class="text">
+                  線上問卷<br><br>STEP 02
+                </div>
+              </div>
+              <div class="hover-sign"></div>
+            </div>
+
+            <div class="cart cart3" data-index="3">
+              <div class="img-text">
+                 <img src="image/regIDCard.png" width="91%" />
+                 <div class="text">
+                    ID-Card 內容說明<br><br>STEP 03
+                 </div>
+              </div>
+              <div class="hover-sign"></div>
+            </div>
+
+            <div class="cart cart4" data-index="4">
+              <div class="img-text">
+
+                 <img src="image/regCoin.png" width="95%" />
+
+                  <div class="text">
+                    繳交保證金<br><br>STEP 04
+                  </div>
+                 <div class="hover-sign"></div>
+              </div>
+            </div>
+
+             
+             <div class="cart cart5" data-index="5">
+               <div class="img-text">
+                 
+                 <img src="image/regList.svg" width="95%" />
+                   
+                  <div class="text">
+                    錄取名單
+                  </div>
+                 <div class="hover-sign"></div>
+                </div>
+
+              </div>
+            
+            
+          </div>
+
+          <div class="btn-container">
+            <div class="reg-btn">
+              <img src="image/regReg.svg" />
+              <div class="text">
+                back
+              </div>
+            </div>
+          </div>
+
+
+          <div class="image" style="width: 12%">
+            <img src="image/regRightImg.svg"/>
+          </div>
+
+          <div class="step01 animate-right">
+            <div class="content">
+                <div class="content-top">
+                  <p>2017 年 6 月 27 日 (二) 至 2017 年 7 月 2 日 (日) ，共 6 天。<br>
+                     每日活動開始時間皆為 09:00，結束時間為 18:00 – 18:30 不等。
+                  </p>
+
+                  <p>【 活動地點 】 國立台灣大學水源校區 D-School（台北市中正區思源街18號、永福橋旁）</p>
+                  <p>【 報名學員資格 】 全國各大專院校在學學生，包含大學部三年級以上與碩/博生。</p>
+                  <p>【 招生時程 】線上報名時間：5/31(三) 00:00 至 6/11(日) 23:59 前<br>
+                      <span style="padding-left: 100px">正取名單公佈：6/15(四) 10:00網路公佈與信件通知，請自行上網查看</span><br>
+                      <span style="padding-left: 100px">遞補備取通知：6/17(六) 個別電話通知</span>
+                  </p>
+                  <p>
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                  </p>
+                </div>
+
+                <div class="content-bottom">
+                  <p>【 報名方式 】</p>
+                  <p>在報名期限內，備妥報名相關資料後，經報名連結線上報名。<br>
+                     公佈與通知正/備取之學員，請於指定時間內繳交1000元保證金以及100元保險費用，<br>並回覆系統匯款資訊以確認成功匯款，經由查證後完成報名程序。<br>
+                     未依照指定報名期限內完成報名程序者，視為放棄報名資格，會依據備取順序遞補。<br>
+                     正取學員請於6/17(六) 17:00 前繳交保證金及保險費用以完成報名程序。<br>
+                     備取名單會於6/17(六) 後個別電話通知，經電話通知錄取的備取學員請於6/19(一) 17:00 前繳交保證金及保險費用以完成報名程序。
+                  </p>
+                  <p style="color: #2a4399">
+                    （本活動透過報名資料作為錄取參考依據，挑選正/備取學員並於網站公佈與通知，與報名順序時間無關。）
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <div class="step02 animate-right">
+            <div class="content">
+              <div class="content-top">
+                <p>進入線上報名系統前需準備兩份報名資料，包含「線上問卷」與「IDCard」兩部分：</p>
+                <br>
+                <p>1.「線上問卷」為線上填寫作業，包含個人基本資料、教育背景兩部分。<br>
+                   2.「IDCard」為一份三頁之投影片，包含 “個人簡歷” 與“觀察發想”。
+                </p>
+                <br>
+                <br>
+                <p>
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                </p>
+                <br>
+                <br>
+              </div>
+
+              <div class="content-bottom">
+                <p>
+                  <img src="image/openHCI_web-10.svg" width="30px">
+                  PS.檔案請自行製作與編排，並存檔輸出PDF檔可於"觀察發想"內容中附加輔助說明之素材 <br>
+                  <span style="padding-left: 30px">(手繪、電繪圖片、照片或另附影片，格式不限)</span>
+                </p>
+                <p>
+                  <img src="image/openHCI_web-10.svg" width="30px">
+                  PDF檔名標題請依格式填寫： [2017 IDCard] 校系_姓名 (範例：[2017 iDCard] 台科大工商業設計系_王曉明)
+                </p>
+                <p>
+                  <img src="image/openHCI_web-10.svg" width="30px">
+                  若有其他輔助說明之素材，請將檔案放至上傳空間(ex. dropbox)後將上傳連結附於報名系統內。
+                </p>
+                <p>
+                  <img src="image/openHCI_web-10.svg" width="30px">
+                  若檔名或檔案格式不符，造成漏檔，報名者請自行負責。
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="step03 animate-right">
+            <div class="content">
+              <div class="content-top">
+                <p>
+                  IDCard為線上報名之第二份需預先準備之作業檔案，並於線上報名時上傳。<br>
+                  第一頁請放個人簡歷，表達格式不限。<br>
+                  第二頁請放上個人最滿意的作品(研究、專題、設計皆可)，可透過文字、圖片或另附影片表達。<br>
+                  第三頁請從你的經驗中去發想並回答以下兩問題，可透過文字、圖片或另附影片表達，數量、格式均不限。
+                </p>
+                <p>
+                  1. 請從自己與互動物（包括電腦、智慧裝置、圖形化介面、互動設計、互動藝術）<br>
+                  <span style="padding-left: 19px">認知或相處的經驗中，舉一自己最喜歡或印象深刻的例子，並說明原因。</span>
+                </p>
+                <p>
+                  2. 本次活動主題為「重構Re:__ 」，請你想像我們能如何給予被淘汰的物品一項新的功能，讓他能夠有新的使命，<br>
+                  <span style="padding-left: 19px">重新賦予物件內在的平衡與外裝的非凡意義？</span><br>
+                  <span style="padding-left: 19px">並描述一例。具體描述內容包括：</span><br>
+                  <span style="padding-left: 19px">a. 過去的那項物品為何。</span><br>
+                  <span style="padding-left: 19px">b. 你賦予它的新功能為何。</span><br>
+                  <span style="padding-left: 19px">c. 可以達到什麼新的互動。</span>
+                </p>
+                <br>
+                <br>
+                <p>
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                </p>
+
+              </div>
+
+              <div class="content-bottom">
+                <div style="display: inline-block;margin-right: 2%;">
+                  <img src="image/openHCI_web-10.svg" width="30px" style="margin:0% 0% 3% -5% ">
+                  <p>
+                    IDCard範例一：<br>
+                    <a href="https://goo.gl/fZhX0w" target="_blank">https://goo.gl/fZhX0w</a>
+                  </p>
+                </div>
+                <div style="display: inline-block;margin-right: 2%;">
+                  <img src="image/openHCI_web-10.svg" width="30px" style="margin:0% 0% 3% -5%">
+                  <p>
+                    IDCard範例二：<br>
+                    <a href="https://goo.gl/YurqqP" target="_blank">https://goo.gl/YurqqP</a>
+                  </p>
+                </div>
+                <div style="display: inline-block;">
+                  <img src="image/openHCI_web-10.svg" width="30px" style="margin:0% 0% 3% -5%">
+                  <p>
+                    IDCard範例三：<br>
+                    <a href="https://goo.gl/0DOI9m" target="_blank">https://goo.gl/GnkGK6</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="step04 animate-right">
+            <div class="content">
+              <div class="content-top">
+                <p>
+                  正取學員會於6/15(四) 網路公佈與信件通知，請自行上網查看， 並請於6/17(六) 17:00 前繳交1000元保證金以及100元保險費用。<br>
+                  經由電話通知錄取的備取學員，請於6/19(一) 17:00 前繳交保證金及保險費用以完成報名程序，此保證金為確保學員於活動期間內的出席狀況，全程參與活動、無無故缺席者，可於活動最後一天全額領回。
+                </p>
+               
+                  匯款後請報名者提供匯款戶名與帳號後五碼<br>
+                  回覆Open HCI 2017主辦人事組：human@openhci.com以確認成功匯款<br>
+                  主辦單位確認報名與匯款資料後完成報名。
+                </p>
+                <p>OpenHCI 2017，感謝您的參與 Best regards.</p>
+                <p>
+                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                </p>
+              </div>
+
+              <div class="content-bottom" >
+                <div style="display: inline-block;margin-right: 2%;">
+                  <p style="font-size:12px ">
+                    關於報名有任何問題，歡迎寄信給主辦單位：<br>
+                     <a href="mailto:human@openhci.com">human@openhci.com(人事組)</a>
+                  </p>
+                </div>
+
+              <div style="display: inline-block;margin-right: 2%;">
+                <p style="font-size:12px">
+                  官方網站：<br>
+                  <a href="http://www.openhci.com" target="_blank">http://www.openhci.com</a>
+                </p>
+              </div>
+
+              <div style="display: inline-block;">
+                <p style="font-size:12px">
+                  粉絲頁：<br>
+                  <a href="https://www.facebook.com/openhci" target="_blank">https://www.facebook.com/openhci</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step05 animate-right">
+          <div class="content">
+            <div class="content-top">
+              <p>
+                <span style="font-weight: 400;">報名正取名單</span><br>
+                ★ 錄取名單依姓氏筆畫排序，分隊名單將另行公佈。
+              </p>
+              <p>
+                王Ｏ弘 王Ｏ玄 王Ｏ㚬 王Ｏ英 王Ｏ澍 王Ｏ樺<br>
+                古Ｏ樺 古Ｏ濤 江Ｏ璇 何Ｏ錚 吳Ｏ宇 吳Ｏ瑤<br>
+                吳Ｏ霖 李Ｏ 李Ｏ嘉 周Ｏ其 林Ｏ晴 林Ｏ萱<br>
+                施Ｏ豪 胡Ｏ揚 倪Ｏ廷 凌Ｏ廷 張Ｏ佳 郭Ｏ妤<br>
+                陳Ｏ帆 陳Ｏ昕 陳Ｏ傑 陳Ｏ儒 游Ｏ霖 程Ｏ<br>
+                黃Ｏ 黃Ｏ真 黃Ｏ然 劉Ｏ秀 劉Ｏ姍 劉Ｏ菁<br>
+                劉Ｏ勳 蔡Ｏ宇 蔡Ｏ芸 蕭Ｏ哲 謝Ｏ宇 謝Ｏ庭<br>
+                簡Ｏ廷 蘇Ｏ生
+              </p>
+
+            </div>
+            <div class="content-bottom">
+              <p>
+                <span style="font-weight: 400;">報名備取名單</span><br>
+                ★ 備取名單依姓氏筆畫排序，備取名額依照正取放棄人數調整，並於6/17(六) 17:00後另行電話通知。
+              </p>
+              <p>
+                丁Ｏ鈞 江Ｏ蓉 李Ｏ怡 林Ｏ安 施Ｏ庭 張Ｏ綺<br>
+                張Ｏ蘊 許Ｏ廷 陳Ｏ字 陳Ｏ呈 曾Ｏ杰 游Ｏ詮<br> 
+                黃Ｏ庭 黃Ｏ婷 黃Ｏ霆 楊Ｏ容 劉Ｏ媺 鄭Ｏ元<br> 
+                鄭Ｏ心 鄭Ｏ彤 簡Ｏ君 簡Ｏ恩
+              </p>
+              <p>
+                <span style="font-weight: 400;">報名保證金繳交須知</span><br>
+                請以上正取同學參照「step4繳交保證金」進行保證金繳交作業。
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+    <!-- section rigistraion over -->
+
+    <!-- section taichi begin -->
+  <section id="taichi">
+    <img src = "image/TAICHI.svg" class="tai-background">
+    <div class="content-container">
+      <h3>
+         OpenHCI 與 TAICHI 合作
+      </h3>
+      <p>
+        </br>
+        你想要讓自己的作品在台灣人機互動年度盛會TAICHI被看見嗎？</br>
+        TAICHI 是台灣人機互動研究領域中最具代表性的研討會，由台灣人機互動學會所舉辦的年度會議，為國內跨領域人機互動學者與社群，提供一個意見交換以及成果交流的年度盛會。
+
+      </p>
+      <p>
+        OpenHCI 工作坊結束之後，OpenHCI將推薦各組成果作品至TAICHI年會展示，除了學員能夠於會議中發表自己的作品、增加曝光度外，也有機會跟眾多國內外HCI、UXD專家交流，不管是向學界、業界前輩取經，或是互相分享經驗，相信對學員的未來求學或工作都有相當大的幫助。
+        </br>
+      </p>
+      <p>
+        除此之外，參展隊伍所有成員都可以免註冊費參加TAICHI會議期間各場次活動喔！這麼難得的機會，只有OpenHCI學員才有呢～
+        </br>
+      </p>
+    </div>
+  </section>
+
+    <!-- section crew begin -->
+    <section id="crew" >
+       <img src="image/crewTitle.png" class="title wow rotateInDownRight">
+       <div class="crew-slide-bar">
+         <div class="back-btn">
+            <img class="pic" src="image/crewsliderup.svg">
+            <div class="text">
+              <span>Back</span>
+            </div>
+          </div>
+
+          <div class="next-btn">
+            <img class="pic" src="image/nextBtn.svg">
+            <div class="text">
+              <span>Next</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="crew-member slider">
+            <div>
+          <div class="member-page">
+            <div class="member-container">
+              <h4>PROGRAM</h4>
+                  <div class="member">
+                    <div class="name">陳品亘</div>
+                    <div class="description">
+                      國立政治大學資訊科學系<br/>
+                      指導教授 余能豪老師
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">李宜庭</div>
+                    <div class="description">
+                      國立臺灣科技大學工商業設計研究所<br/>
+                      指導教授 陳玲鈴老師
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">張臻然</div>
+                    <div class="description">
+                      國立臺灣大學資訊網路與多媒體研究所<br/>
+                      指導教授 陳炳宇老師
+                    </div>
+                  </div>
+                  <h4>TREASURER</h4>
+                  <div class="member">
+                    <div class="name">張智雅</div>
+                    <div class="description">
+                      國立政治大學數位內容碩士學位學程<br/>
+                      指導教授 余能豪老師
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">陳尹郁</div>
+                    <div class="description">
+                      國立臺北科技大學工業設計系創新設計碩士班<br/>
+                      指導教授 鄭孟淙老師
+                    </div>
+                  </div>
+            </div>
+
+            <div class="member-container">
+              <h4>SPONSORSHIP</h4>
+                  <div class="member">
+                    <div class="name">黃英嘉</div>
+                    <div class="description">
+                      國立臺北科技大學工業設計系創新設計碩士班<br/>
+                      指導教授 黃子坤老師
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">楊于萱</div>
+                    <div class="description">
+                      國立清華大學資訊系統與應用研究所<br/>
+                      指導教授 許有真老師
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">陳暐傑</div>
+                    <div class="description">
+                      國立政治大學數位內容學程碩士班<br/>
+                      指導教授 余能豪老師
+                    </div>
+                  </div>
+                  <h4>LECTURE</h4>
+                  <div class="member">
+                    <div class="name">張嘉珊</div>
+                    <div class="description">
+                      國立政治大學歐洲語文學系法文組<br/>
+                      雙主修數位內容學士學位學程
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">孔博雯</div>
+                    <div class="description">
+                      國立台灣科技大學工商業設計研究所<br/>
+                      指導教授 梁容輝老師
+                    </div>
+                  </div>
+              </div>
+
+              <div class="member-container member-col3">
+                <div class ="col3">
+                  <h4>WEB SERVICE</h4>
+                      <div class="member">
+                        <div class="name">陳俞安</div>
+                        <div class="description">
+                          國立臺灣大學資訊工程學系暨研究所<br/>
+                          指導教授 陳彥仰老師
+                        </div>
+                      </div>
+                      <div class="member">
+                        <div class="name">謝禎原</div>
+                        <div class="description">
+                          國立交通大學資訊科學與工程研究所<br/>
+                          指導教授 詹力韋老師
+                        </div>
+                      </div>
+                      <div class="member">
+                        <div class="name">楊庚達</div>
+                        <div class="description">
+                          國立交通大學資訊科學與工程研究所<br/>
+                          指導教授 詹力韋老師
+                        </div>
+                      </div>
+                </div>
+                <div class ="col3">
+                  <h4>VISUAL DESIGN</h4>
+                  <div class="member ">
+                    <div class="name">張巧玗</div>
+                    <div class="description">
+                      國立臺灣科技大學工商業設計系商設組<br/>
+                      指導教授 林廷宜老師
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">倪僑駿</div>
+                    <div class="description">
+                      國立臺北科技大學工業設計系創新設計碩士班<br/>
+                      指導教授 黃子坤老師
+                    </div>
+                  </div>
+                  <div class="member">
+                    <div class="name">葉書晴</div>
+                    <div class="description">
+                      實踐大學媒體傳達設計學系<br/>
+                      大四
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+      <div class="member-page">
+        <div class="member-container">
+          <h4>FILM CREW</h4>
+                    <div class="member">
+                      <div class="name">黃彥儒</div>
+                      <div class="description">
+                        國立政治大學數位內容碩士學位學程<br/>
+                        指導教授 陳聖智老師
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">吳冠樺</div>
+                      <div class="description">
+                        國立臺灣科技大學工商業設計研究所<br/>
+                        指導教授 陳玲鈴老師
+                      </div>
+                    </div>
+                    <h4>HUMAN RESOURCE</h4>
+                    <div class="member">
+                      <div class="name">張書翔</div>
+                      <div class="description">
+                        國立臺灣科技大學工商業設計研究所<br/>
+                        指導教授 梁容輝老師
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">曾唯哲</div>
+                      <div class="description">
+                        國立臺灣科技大學電資學士班<br/>
+                        大三
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">吳育騫</div>
+                      <div class="description">
+                        國立臺灣大學資訊工程學系暨研究所<br/>
+                        碩一
+                      </div>
+                    </div>
+                </div>
+                <div class="member-container">
+                  <h4>TECH</h4>
+                    <div class="member ">
+                      <div class="name">史佳欣</div>
+                      <div class="description">
+                        國立政治大學數位內容碩士學位學程<br/>
+                        指導教授 陶亞倫老師
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">朱千慧</div>
+                      <div class="description">
+                        國立臺灣科技大學工商業設計研究所<br/>
+                        指導教授 梁容輝老師
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">古濱淞</div>
+                      <div class="description">
+                        國立臺灣大學資訊工程學系暨研究所<br/>
+                        指導教授 陳彥仰老師
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">李威霖</div>
+                      <div class="description">
+                        國立政治大學數位內容碩士學位學程<br/>
+                        指導教授 蔡子傑老師
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">高銓澤</div>
+                      <div class="description">
+                        國立清華大學資訊工程學系<br/>
+                        指導教授 王浩全老師
+                      </div>
+                    </div>
+                </div>
+                <div class="member-container member-col3">
+                  <div class="col3">
+                    <h4>PUBLICITY</h4>
+                    <div class="member">
+                      <div class="name">陳韋儒</div>
+                      <div class="description">
+                        國立政治大學企業管理學系<br/>
+                        雙主修數位內容學士學位學程
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">洪湘婷</div>
+                      <div class="description">
+                        國立交通大學傳播與科技學系碩士班<br/>
+                        指導教授 許峻誠老師
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col3">
+                    <h4>EXHIBITION / DEMO</h4>
+                    <div class="member">
+                      <div class="name">顏秉盈</div>
+                      <div class="description">
+                        國立政治大學數位內容碩士學位學程
+                      </div>
+                    </div>
+                    <div class="member">
+                      <div class="name">劉孟錡</div>
+                      <div class="description">
+                        國立臺灣科技大學工商業設計系
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="right-side-bar">
+          <div class="next-btn">
+            <img class="pic" src="image/nextBtn.svg">
+            <div class="text">
+              <span>Next</span>
+            </div>
+          </div>
+          <div class="back-btn">
+            <img class="pic" src="image/crewsliderup.svg">
+            <div class="text">
+              <span>Back</span>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- section crew over -->
+
+    <!-- section sponsor begin -->
+    <section id="sponsor">
+      <div class="sponsor-frame">
+        <div class="organizer">
+          <div class="title">ORGANIZER</div>
+          <img src="image/s1.png" width="215px">
+          <img src="image/s2.png" width="285px">
+          <img src="image/s3.png" width="240px">
+          </br>
+          <img src="image/s4.png" width="205px">
+          <img src="image/s17.png" width="240px">
+
+        </div>
+        <div class="co-organizer">
+          <div class="title">CO-ORGANIZER</div>
+          <img src="image/s5.png" width="210px">
+          <img src="image/s6.png" width="220px">
+          <img src="image/s10.png" width="220px">
+          <br/>
+          <img src="image/s12.png" width="200px">
+          <img src="image/s11.png" width="120px">
+        </div>
+        <div class="sponsor">
+          <div class="title">SPONSOR</div>
+          <img src="image/s15.png" width="100px">
+          <img src="image/s14.png" width="210px">
+          <br/>
+          <img src="image/s8.png" width="160px">
+          <img src="image/s9.svg" width="100px">
+          <img src="image/s16.png" width="200px">
+          <br/>
+          <img src="image/s13.png" width="200px">
+          <img src="image/s7.png" width="160px">
+          <img src="image/s18.png" width="170px">
+        </div>
+      </div>
+    </section>
+
+    <!-- section sponsor over -->
+
+    <!-- section contact begin -->
+
+    <section id="contact">
+      <div class="contact-frame">
+        <img src="image/contactTitle.png" class="contact-title wow flipInX">
+      </div>
+      <div class="contact-frame">
+        <img src="image/contactImage.svg" class="contact-image wow lightSpeedIn">
+      </div>
+        <div class="info wow fadeIn">
+          <div>
+            OPEN HCI :
+              <a href="../2016/index.html" Target="_blank">2016</a>
+              <a href="../2015/index.html" TARGET="_blank">2015</a>
+              <a href="../2014/index.html" TARGET="_blank">2014</a>
+              <a href="../2013/index.html" TARGET="_blank">2013</a>
+              <a href="../2012/index.html" TARGET="_blank">2012</a>
+              <a href="../2011/index.html" TARGET="_blank">2011</a>
+              <a href="../2009/index.html" TARGET="_blank">2009</a>
+          </div>
+          <div>FACEBOOK PAGE : <a href="https://www.facebook.com/openhci/" target="_blank">Open HCI 人機互動工作坊</a></div>
+          <div class="copyright">＠COPYRIGHT 2017 OPEN HCI</div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- section contact over -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js" async></script>
+    <script type="text/javascript" src="js/slideNav.js"></script>
+    <script src="js/programPage.js"></script>
+    <script type="text/javascript" src="js/jquery.diyslider.min.js" ></script>
+    <script type="text/javascript" src="js/animate.js"></script>
+    <script type="text/javascript" src="js/crewPage.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/homePageAnimation.js"></script>
+
+  </body>
+</html>
